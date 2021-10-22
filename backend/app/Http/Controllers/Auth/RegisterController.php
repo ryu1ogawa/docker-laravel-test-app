@@ -56,6 +56,7 @@ class RegisterController extends Controller
             'first-name-reading' => ['required', 'string', 'max:255'],
             'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
             'password' => ['required', 'string', 'min:8', 'confirmed'],
+            'employee' => ['required', 'boolean'],
         ]);
     }
 
@@ -74,6 +75,7 @@ class RegisterController extends Controller
             'first-name-reading' => $data['first-name-reading'],
             'email' => $data['email'],
             'password' => Hash::make($data['password']),
+            'employee' => isset($data['employee']),
         ]);
     }
 }

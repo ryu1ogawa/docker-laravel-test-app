@@ -101,6 +101,14 @@
                                 <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required autocomplete="new-password">
                             </div>
                         </div>
+                        
+                        <div class="form-group row mb-2">
+                            <label for="employee" class="col-md-4 col-form-label text-md-right">従業員</label>
+
+                            <div class="col-md-6">
+                                <input id="employee" type="checkbox" class="form-check-input" name="employee" value="" required autocomplete="employee" aria-label="Checkbox for following text input">
+                            </div>
+                        </div>
 
                         <div class="form-group row mb-0">
                             <div class="col-md-6 offset-md-4">
