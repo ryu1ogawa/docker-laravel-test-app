@@ -106,7 +106,7 @@
                             <label for="employee" class="col-md-4 col-form-label text-md-right">従業員</label>
 
                             <div class="col-md-6">
-                                <input id="employee" type="checkbox" class="form-check-input" name="employee" value="1" required autocomplete="employee" aria-label="Checkbox for following text input">
+                                <input id="employee" type="checkbox" class="form-check-input" name="employee" value="1" autocomplete="employee" aria-label="Checkbox for following text input">
                             </div>
                         </div>
 
