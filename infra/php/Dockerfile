@@ -11,13 +11,23 @@ RUN apt-get update && \
   apt-get clean && \
   rm -rf /var/lib/apt/lists/* && \
   docker-php-ext-install intl pdo_mysql zip bcmath && \
-  apt-get install -y \
-  curl \
-  gnupg && \
-  curl -sL https://deb.nodesource.com/setup_11.x | bash - && \
-  apt-get install -y nodejs && \
-  npm install npm@latest -g && \
-  npm run dev
+  curl -L git.io/nodebrew | perl - setup && \
+  export PATH=$HOME/.nodebrew/current/bin:$PATH && \
+  source ~/.bashrc && \
+  apt update && \
+  apt -y install nodejs npm &&\
+  npm install && \
+  nodebrew install latest && \
+  nodebrew use latest
+
+  # apt-get install -y \
+  # curl \
+  # gnupg && \
+  # curl -sL https://deb.nodesource.com/setup_11.x | bash - && \
+  # apt-get install -y nodejs && \
+  # apt-get update && apt-get install -y git zip unzip && \
+  # npm install npm@latest -g && \
+  # npm run dev
 
 COPY ./php.ini /usr/local/etc/php/php.ini
 
