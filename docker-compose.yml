@@ -5,7 +5,7 @@ services:
     volumes:
       - ./backend:/work
   web:
-    image: nginx:1.20-alpine
+    build: ./infra/nginx
     ports:
       - 8080:80
     volumes:
