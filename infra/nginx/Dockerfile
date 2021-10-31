@@ -2,7 +2,7 @@ FROM nginx:1.19
 
 # Node.js 設定
 ARG node_ver=14.15.1
-ARG node_path=/work/local/lib/nodejs
+ARG node_path=./local/lib/nodejs
 ARG node_file_name=node-v${node_ver}-linux-x64
 
 # Node.js のパスを通す
