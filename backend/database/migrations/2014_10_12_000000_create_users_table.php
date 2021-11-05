@@ -23,6 +23,13 @@ class CreateUsersTable extends Migration
             $table->string('name-reading');
             $table->string('email')->unique();
             $table->timestamp('email_verified_at')->nullable();
+            $table->string('postal-code');
+            $table->string('prefectures');
+            $table->string('municipalities');
+            $table->string('house-number');
+            $table->string('building-name');
+            $table->string('telephone-number');
+            $table->string('emergency-telephone-number');
             $table->string('password');
             $table->boolean('employee');
             $table->rememberToken();

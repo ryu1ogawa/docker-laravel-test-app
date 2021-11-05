@@ -79,6 +79,55 @@
                                 @enderror
                             </div>
                         </div>
+                        
+                        <div class="form-group row mb-2">
+                            <label for="postal-code" class="col-md-4 col-form-label text-md-right">郵便番号</label>
+                            <div class="col-md-6">
+                                <input id="postal-code" type="text" placeholder="0000000(ハイフンなし7桁)"class="form-control" name="postal-code" value="{{ old('postal-code') }}" required autocomplete="postal-code">
+                            </div>
+                        </div>
+
+                        <div class="form-group row mb-2">
+                            <label for="prefectures" class="col-md-4 col-form-label text-md-right">都道府県</label>
+                            <div class="col-md-6">
+                                <input id="prefectures" type="text" placeholder="東京都"class="form-control " name="prefectures" value="{{ old('prefectures') }}" required autocomplete="prefectures">
+                            </div>
+                        </div>
+                        
+                        <div class="form-group row mb-2">
+                            <label for="municipalities" class="col-md-4 col-form-label text-md-right">市区町村</label>
+                            <div class="col-md-6">
+                                <input id="municipalities" type="text" placeholder="新宿区 西新宿"class="form-control" name="municipalities" value="{{ old('municipalities') }}" required autocomplete="municipalities">
+                            </div>
+                        </div>
+
+                        <div class="form-group row mb-2">
+                            <label for="house-number" class="col-md-4 col-form-label text-md-right">番地</label>
+                            <div class="col-md-6">
+                                <input id="house-number" type="text" placeholder="○丁目○番地○号"class="form-control" name="house-number" value="{{ old('house-number') }}" required autocomplete="house-number">
+                            </div>
+                        </div>
+
+                        <div class="form-group row mb-2">
+                            <label for="building-name" class="col-md-4 col-form-label text-md-right">建物名・部屋番号</label>
+                            <div class="col-md-6">
+                                <input id="building-name" type="text" placeholder="○ハイツ○号室"class="form-control" name="building-name" value="{{ old('building-name') }}" required autocomplete="building-name">
+                            </div>
+                        </div>
+
+                        <div class="form-group row mb-2">
+                            <label for="telephone-number" class="col-md-4 col-form-label text-md-right">電話番号</label>
+                            <div class="col-md-6">
+                                <input id="telephone-number" type="text" placeholder="00000000000(ハイフンなし)"class="form-control " name="telephone-number" value="{{ old('telephone-number') }}" required autocomplete="telephone-number">
+                            </div>
+                        </div>
+
+                        <div class="form-group row mb-2">
+                            <label for="emergency-telephone-number" class="col-md-4 col-form-label text-md-right">緊急連絡先</label>
+                            <div class="col-md-6">
+                                <input id="emergency-telephone-number" type="text" placeholder="00000000000(ハイフンなし)"class="form-control " name="emergency-telephone-number" value="{{ old('emergency-telephone-number') }}" required autocomplete="emergency-telephone-number">
+                            </div>
+                        </div>
 
                         <div class="form-group row mb-2">
                             <label for="password" class="col-md-4 col-form-label text-md-right">パスワード<span class="text-danger">※半角英数字8文字以上</span></label>
@@ -91,6 +140,22 @@
                                     <strong>{{ $message }}</strong>
                                 </span>
                                 @enderror
+                            </div>
+                        </div>
+
+                        <div class="form-group row mb-2">
+                            <label for="password-confirm" class="col-md-4 col-form-label text-md-right">パスワード(確認用)</label>
+
+                            <div class="col-md-6">
+                                <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required autocomplete="new-password">
+                            </div>
+                        </div>
+
+                        <div class="form-group row mb-2">
+                            <label for="password-confirm" class="col-md-4 col-form-label text-md-right">パスワード(確認用)</label>
+
+                            <div class="col-md-6">
+                                <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required autocomplete="new-password">
                             </div>
                         </div>
 
