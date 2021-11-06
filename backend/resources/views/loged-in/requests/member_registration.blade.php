@@ -1,12 +1,12 @@
 <form>
     <div class="input-group mb-3">
-        <label for="memberLastName" class="form-label">姓</label>
-        <input id="memberLastName" type="text" class="form-control" placeholder="山田" aria-label="memberLastName">
+        <label for="member-last-name" class="form-label">姓</label>
+        <input id="member-last-name" type="text" class="form-control" placeholder="山田" aria-label="member-last-name">
     </div>
 
     <div class="input-group mb-3">
-        <label for="memberFirstName" class="form-label">名</label>
-        <input id="memberFirstName" type="text" class="form-control" placeholder="太郎" aria-label="memberFirstName">
+        <label for="member-first-name" class="form-label">名</label>
+        <input id="member-first-name" type="text" class="form-control" placeholder="太郎" aria-label="memberFirstName">
     </div>
 
     <div class="input-group mb-3">
