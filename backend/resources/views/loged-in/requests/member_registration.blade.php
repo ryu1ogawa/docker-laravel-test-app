@@ -6,34 +6,34 @@
 
     <div class="input-group mb-3">
         <label for="member-first-name" class="form-label">名</label>
-        <input id="member-first-name" type="text" class="form-control" placeholder="太郎" aria-label="memberFirstName">
+        <input id="member-first-name" type="text" class="form-control" placeholder="太郎" aria-label="member-first-name">
     </div>
 
     <div class="input-group mb-3">
-        <label for="memberLastNameReading" class="form-label">せい</label>
-        <input id="memberLastNameReading" type="text" class="form-control" placeholder="やまだ" aria-label="memberLastNameReading">
+        <label for="member-last-name-reading" class="form-label">せい</label>
+        <input id="member-last-name-reading" type="text" class="form-control" placeholder="やまだ" aria-label="member-last-name-reading">
     </div>
 
     <div class="input-group mb-3">
-        <label for="memberFirstNameReading" class="form-label">めい</label>
-        <input id="memberFirstNameReading" type="text" class="form-control" placeholder="たろう" aria-label="memberFirstNameReading">
+        <label for="member-first-name-reading" class="form-label">めい</label>
+        <input id="member-first-name-reading" type="text" class="form-control" placeholder="たろう" aria-label="member-first-name-reading">
     </div>
 
     <div class="input-group mb-3">
-        <label for="memberBirthday" class="form-label">生年月日</label>
-        <input id="memberBirthday" type="date" class="form-control" aria-label="memberBirthday">
+        <label for="member-birthday" class="form-label">生年月日</label>
+        <input id="member-birthday" type="date" class="form-control" aria-label="member-birthday">
     </div>
 
     <div class="input-group mb-3">
-        <label for="memberSex" class="form-label">性別</label>
-        <input type="radio" name="memberSex" value="man" /> 男　
-        <input type="radio" name="memberSex" value="woman" /> 女
+        <label for="member-sex" class="form-label">性別</label>
+        <input type="radio" name="member-sex" value="man" /> 男　
+        <input type="radio" name="member-sex" value="woman" /> 女
     </div>
 
     <div class="input-group mb-3">
-        <label for="memberClassification" class="form-label">対象学年区分</label>
+        <label for="member-classification" class="form-label">対象学年区分</label>
         <div class="dropdown">
-            <button class="btn btn-secondary dropdown-toggle" type="button" id="memberClassification" data-bs-toggle="dropdown" aria-expanded="false">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="member-classification" data-bs-toggle="dropdown" aria-expanded="false">
                 選択してください
             </button>
             <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
@@ -43,9 +43,9 @@
     </div>
 
     <div class="input-group mb-3">
-        <label for="memberEducationFacility" class="form-label">教育機関</label>
+        <label for="member-education-facility" class="form-label">教育機関</label>
         <div class="dropdown">
-            <button class="btn btn-secondary dropdown-toggle" type="button" id="memberEducationFacility" data-bs-toggle="dropdown" aria-expanded="false">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="member-education-facility" data-bs-toggle="dropdown" aria-expanded="false">
                 選択してください
             </button>
             <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
@@ -55,9 +55,9 @@
     </div>
 
     <div class="input-group mb-3">
-        <label for="memberSchoolName" class="form-label">学校名</label>
+        <label for="member-school-name" class="form-label">学校名</label>
         <div class="dropdown">
-            <button class="btn btn-secondary dropdown-toggle" type="button" id="memberSchoolName" data-bs-toggle="dropdown" aria-expanded="false">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="member-school-name" data-bs-toggle="dropdown" aria-expanded="false">
                 選択してください
             </button>
             <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
@@ -67,9 +67,9 @@
     </div>
 
     <div class="input-group mb-3">
-        <label for="memberContractKinds" class="form-label">会員種別</label>
+        <label for="member-contract-kinds" class="form-label">会員種別</label>
         <div class="dropdown">
-            <button class="btn btn-secondary dropdown-toggle" type="button" id="memberContractKinds" data-bs-toggle="dropdown" aria-expanded="false">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="member-contract-kinds" data-bs-toggle="dropdown" aria-expanded="false">
                 選択してください
             </button>
             <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
@@ -79,9 +79,9 @@
     </div>
 
     <div class="input-group mb-3">
-        <label for="memberCourse" class="form-label">コースの選択</label>
+        <label for="member-course" class="form-label">コースの選択</label>
         <div class="dropdown">
-            <button class="btn btn-secondary dropdown-toggle" type="button" id="memberCourse" data-bs-toggle="dropdown" aria-expanded="false">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="member-course" data-bs-toggle="dropdown" aria-expanded="false">
                 選択してください
             </button>
             <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
