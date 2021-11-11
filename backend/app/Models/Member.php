@@ -10,17 +10,17 @@ class Member extends Model
     use HasFactory;
 
     protected $fillable = [
-        'member-last-name',
-        'member-first-name',
-        'member-name',
-        'member-last-name-reading',
-        'member-first-name-reading',
-        'member-name-reading',
-        'member-birthday',
-        'member-sex',
-        'member-classification',
-        'member-education-facility',
-        'member-school-name',
-        'member-contract-kinds',
+        'last-name',
+        'first-name',
+        'name',
+        'last-name-reading',
+        'first-name-reading',
+        'name-reading',
+        'birthday',
+        'sex',
+        'classification',
+        'education-facility',
+        'school-name',
+        'contract-kinds',
     ];
 }
