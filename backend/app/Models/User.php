@@ -17,6 +17,11 @@ class User extends Authenticatable
      *
      * @var string[]
      */
+
+    public function members() {
+        return $this->hasMany(Member::class);
+    }
+
     protected $fillable = [
         'last-name',
         'first-name',

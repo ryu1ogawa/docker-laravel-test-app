@@ -1,11 +1,11 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Employee;
 
 use Illuminate\Http\Request;
-use App\Models\Member;
+use App\Http\Controllers\Controller;
 
-class MemberController extends Controller
+class ContractKindController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -24,7 +24,7 @@ class MemberController extends Controller
      */
     public function create()
     {
-        return view('logged_in.common.member_registration');
+        //
     }
 
     /**
@@ -36,23 +36,6 @@ class MemberController extends Controller
     public function store(Request $request)
     {
         //
-        $member = new Member;
-
-        $member->last_name = $request->input('last_name');
-        $member->first_name = $request->input('first_name');
-        $member->name = $request->input('last_name' .' '. 'first_name');
-        $member->last_name_reading = $request->input('last_name_reading');
-        $member->first_name_reading = $request->input('first_name_reading');
-        $member->name_reading = $request->input('last_name_reading' .' '. 'first_name_reading');
-        $member->birthday = $request->input('birthday');
-        $member->sex = $request->input('sex');
-        $member->classification = $request->input('classification');
-        $member->education_facility = $request->input('education_facility');
-        $member->school_name = $request->input('school_name');
-        $member->contract_kinds = $request->input('contract_kinds');
-
-        $member->save();
-        return view('logged_in.mypage');
     }
 
     /**
