@@ -26,7 +26,7 @@ class CreateMembersTable extends Migration
             $table->string('classification');
             $table->string('education_facility');
             $table->string('school_name');
-            $table->string('contract_kinds');
+            $table->string('contract_kind');
             $table->rememberToken();
             $table->timestamps();
         });

@@ -49,7 +49,7 @@ class MemberController extends Controller
         $member->classification = $request->input('classification');
         $member->education_facility = $request->input('education_facility');
         $member->school_name = $request->input('school_name');
-        $member->contract_kinds = $request->input('contract_kinds');
+        $member->contract_kind = $request->input('contract_kind');
 
         $member->save();
         return view('logged_in.mypage');

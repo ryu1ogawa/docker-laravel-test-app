@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Employee;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use App\Models\Employee\Course;
 
 class CourseController extends Controller
 {
@@ -25,6 +26,8 @@ class CourseController extends Controller
     public function create()
     {
         //
+        return view('logged_in.employee.modify.add_course');
+
     }
 
     /**
@@ -36,6 +39,13 @@ class CourseController extends Controller
     public function store(Request $request)
     {
         //
+        $course = new Course;
+
+        $course->name = $request->input('name');
+
+        $course->save();
+        return view('logged_in.mypage');
+
     }
 
     /**

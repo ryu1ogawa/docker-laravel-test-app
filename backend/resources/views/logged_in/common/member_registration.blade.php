@@ -68,7 +68,7 @@
     </div>
 
     <div class="input-group mb-3">
-        <label for="member_contract_kinds" class="form-label">会員種別</label>
+        <label for="member_contract_kind" class="form-label">会員種別</label>
         <div class="dropdown">
             <button class="btn btn-secondary dropdown-toggle" type="button" id="member_contract_kinds" data-bs-toggle="dropdown" aria-expanded="false">
                 選択してください

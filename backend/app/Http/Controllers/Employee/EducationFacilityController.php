@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Employee;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use App\Models\Employee\EducationFacility;
 
 class EducationFacilityController extends Controller
 {
@@ -25,6 +26,7 @@ class EducationFacilityController extends Controller
     public function create()
     {
         //
+        return view('logged_in.employee.modify.add_education_facility');
     }
 
     /**
@@ -36,6 +38,12 @@ class EducationFacilityController extends Controller
     public function store(Request $request)
     {
         //
+        $education_facility = new EducationFacility();
+        
+        $education_facility->name = $request->input('education_facility');
+
+        $education_facility->save();
+        return view('logged_in.mypage');
     }
 
     /**

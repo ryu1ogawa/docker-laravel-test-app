@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Employee;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use App\Models\Employee\Classification;
 
 class ContractKindController extends Controller
 {
@@ -25,6 +26,7 @@ class ContractKindController extends Controller
     public function create()
     {
         //
+        return view('logged_in.employee.modify.add_contract_kind');
     }
 
     /**
@@ -36,6 +38,12 @@ class ContractKindController extends Controller
     public function store(Request $request)
     {
         //
+        $classification = new Classification;
+
+        $classification->name = $request->input('name');
+
+        $classification->save();
+        return view('logged_in.mypage');
     }
 
     /**

@@ -15,6 +15,7 @@ class CreateContractKindsTable extends Migration
     {
         Schema::create('contract_kinds', function (Blueprint $table) {
             $table->id();
+            $table->string('name');
             $table->timestamps();
         });
     }

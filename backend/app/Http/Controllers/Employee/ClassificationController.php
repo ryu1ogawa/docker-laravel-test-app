@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Employee;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use App\Models\Employee\Classification;
 
 class ClassificationController extends Controller
 {
@@ -25,6 +26,7 @@ class ClassificationController extends Controller
     public function create()
     {
         //
+        return view('logged_in.employee.modify.add_classification');
     }
 
     /**
@@ -36,6 +38,12 @@ class ClassificationController extends Controller
     public function store(Request $request)
     {
         //
+        $classification = new Classification;
+
+        $classification->name = $request->input('name');
+
+        $classification->save();
+        return view('logged_in.mypage');
     }
 
     /**
