@@ -26,6 +26,7 @@ class SchoolNameController extends Controller
     public function create()
     {
         //
+        return view('logged_in.employee.modify.add_school_name');
     }
 
     /**
@@ -37,6 +38,12 @@ class SchoolNameController extends Controller
     public function store(Request $request)
     {
         //
+        $school_name = new SchoolName;
+
+        $school_name->name = $request->input('name');
+
+        $school_name->save();
+        return view('logged_in.mypage');
     }
 
     /**
