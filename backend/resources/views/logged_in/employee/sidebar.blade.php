@@ -1,3 +1,6 @@
+@extends('logged_in.employee.')
+
+
 <div class="container">
     <div class="register">
         <ul>
