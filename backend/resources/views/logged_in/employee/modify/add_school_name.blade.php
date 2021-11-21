@@ -1,4 +1,4 @@
-<form>
+<form method="POST" action="{{ route('school_name.store') }}">
     <div class="input-group mb-3">
         <label for="name" class="form-label">学校名</label>
         <input id="name" type="text" class="form-control" placeholder="" aria-label="name">
