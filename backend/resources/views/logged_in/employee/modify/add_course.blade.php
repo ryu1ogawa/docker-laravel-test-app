@@ -5,5 +5,5 @@
     </div>
 
     
-    <button type="submit" class="btn btn-primary">Submit</button>
+    <button type="submit" class="btn btn-primary">追加</button>
 </form>
