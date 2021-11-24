@@ -29,6 +29,9 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 
 Route::get('member/create', [MemberController::class, 'create'])->name('member.create');
 Route::post('member/store', [MemberController::class, 'store'])->name('member.store');
+Route::post('member/{id}/edit', [MemberController::class, 'edit'])->name('member.edit');
+Route::post('member/{id}/update', [MemberController::class, 'update'])->name('member.update');
+
 
 Route::get('classification/create',[ClassificationController::class, 'create'])->name('classification.create');
 Route::post('classification/store', [ClassificationController::class, 'store'])->name('classification.store');

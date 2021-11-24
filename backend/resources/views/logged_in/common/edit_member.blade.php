@@ -1,5 +1,6 @@
 <form method="POST" action="{{ route('member.store') }}">
     @csrf
+    @method('put')
     <div class="input-group mb-3">
         <label for="member_last_name" class="form-label">姓</label>
         <input id="member_last_name" type="text" class="form-control" placeholder="山田" aria-label="member_last_name">
