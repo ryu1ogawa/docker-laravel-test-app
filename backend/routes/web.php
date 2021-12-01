@@ -48,4 +48,6 @@ Route::post('education_facility/store', [EducationFacilityController::class, 'st
 Route::get('school_name/create',[SchoolNameController::class, 'create'])->name('school_name.create');
 Route::post('school_name/store', [SchoolNameController::class, 'store'])->name('school_name.store');
 
+Route::get('merchandise/create',[SchoolNameController::class, 'create'])->name('merchandise.create');
+Route::post('merchandise/store', [SchoolNameController::class, 'store'])->name('merchandise.store');
 
