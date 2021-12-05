@@ -1,6 +1,21 @@
 <form method="POST" action="{{ route('member.store') }}">
     @csrf
     <div class="input-group mb-3">
+        <label for="number" class="form-label">会員番号</label>
+        <input id="number" type="text" class="form-control" placeholder="" aria-label="number">    
+    </div>
+
+    <div class="input-group mb-3">
+        <label for="phot" class="form-label">写真</label>
+        <input id="phot" type="text" class="form-control" placeholder="" aria-label="phot">
+    </div>
+
+    <div class="input-group mb-3">
+        <label for="start_date" class="form-label">利用開始日</label>
+        <input id="start_date" type="text" class="form-control" placeholder="2021/01/01" aria-label="start_date">
+    </div>
+
+    <div class="input-group mb-3">
         <label for="member_last_name" class="form-label">姓</label>
         <input id="member_last_name" type="text" class="form-control" placeholder="山田" aria-label="member_last_name">
     </div>
@@ -68,7 +83,41 @@
     </div>
 
     <div class="input-group mb-3">
-        <label for="member_contract_kind" class="form-label">会員種別</label>
+        <label for="anamnesis" class="form-label">既往症</label>
+        <input type="radio" name="anamnesis" value="yes" /> 有
+        <input id="anamnesis" type="text" class="form-control" placeholder="病名" aria-label="anamnesis">
+        <input id="anamnesis" type="text" class="form-control" placeholder="特性" aria-label="anamnesis">
+        <input type="radio" name="anamnesis" value="no" /> 無
+    </div>
+
+    <div class="input-group mb-3">
+        <label for="heart_disease" class="form-label">心臓疾患</label>
+        <input type="radio" name="heart_disease" value="yes" /> 有
+        <input type="radio" name="heart_disease" value="no" /> 無
+    </div>
+
+    <div class="input-group mb-3">
+        <label for="outpatient" class="form-label">通院加療</label>
+        <input type="radio" name="outpatient" value="yes" /> 有
+        <input type="radio" name="outpatient" value="no" /> 無
+    </div>
+
+    
+    <div class="input-group mb-3">
+        <label for="member_contract_kind" class="form-label">水泳経験</label>
+        <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="member_contract_kinds" data-bs-toggle="dropdown" aria-expanded="false">
+                選択してください
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <li><a class="dropdown-item" href="#">水が怖い</a></li>
+
+            </ul>
+        </div>        
+    </div>
+
+    <div class="input-group mb-3">
+        <label for="member_contract_kind" class="form-label">種別</label>
         <div class="dropdown">
             <button class="btn btn-secondary dropdown-toggle" type="button" id="member_contract_kinds" data-bs-toggle="dropdown" aria-expanded="false">
                 選択してください
@@ -92,6 +141,11 @@
         <button type="submit" class="btn btn-primary">追加</button>
     </div>
     
+    <div class="input-group mb-3">
+        <label for="school_bus" class="form-label">スクールバス希望</label>
+        <input type="radio" name="school_bus" value="yes" /> 有
+        <input type="radio" name="school_bus" value="no" /> 無
+    </div>
 
     
 
