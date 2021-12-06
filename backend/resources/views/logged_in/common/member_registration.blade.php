@@ -83,7 +83,7 @@
     </div>
 
     <div class="input-group mb-3">
-        <label for="anamnesis" class="form-label">既往症</label>
+        <label for="anamnesis" class="form-label">既往症</label>
         <input type="radio" name="anamnesis" value="yes" /> 有
         <input id="anamnesis" type="text" class="form-control" placeholder="病名" aria-label="anamnesis">
         <input id="anamnesis" type="text" class="form-control" placeholder="特性" aria-label="anamnesis">
@@ -104,9 +104,9 @@
 
     
     <div class="input-group mb-3">
-        <label for="member_contract_kind" class="form-label">水泳経験</label>
+        <label for="experience" class="form-label">水泳経験</label>
         <div class="dropdown">
-            <button class="btn btn-secondary dropdown-toggle" type="button" id="member_contract_kinds" data-bs-toggle="dropdown" aria-expanded="false">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="experience" data-bs-toggle="dropdown" aria-expanded="false">
                 選択してください
             </button>
             <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
