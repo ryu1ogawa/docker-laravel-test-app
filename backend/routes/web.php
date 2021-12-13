@@ -20,7 +20,7 @@ use App\Http\Controllers\Employee\SchoolNameController;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('auth.login');
 });
 
 Auth::routes();
