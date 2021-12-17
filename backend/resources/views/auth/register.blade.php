@@ -11,12 +11,12 @@
                     <form method="POST" action="{{ route('register') }}">
                         @csrf
                         <div class="form-group row mb-2">
-                            <label for="last-name" class="col-md-4 col-form-label text-md-right">姓</label>
+                            <label for="last_name" class="col-md-4 col-form-label text-md-right">姓</label>
 
                             <div class="col-md-6">
-                                <input id="last-name" type="text" placeholder="山田" class="form-control @error('first-name') is-invalid @enderror" name="last-name" required autocomplete="last-name">
+                                <input id="last_name" type="text" placeholder="山田" class="form-control @error('first_name') is-invalid @enderror" name="last_name" required autocomplete="last_name">
 
-                                @error('last-name')
+                                @error('last_name')
                                 <span class="invalid-feedback" role="alert">
                                     <strong>{{ $message }}</strong>
                                 </span>
@@ -25,12 +25,12 @@
                         </div>
                         
                         <div class="form-group row mb-2">
-                            <label for="first-name" class="col-md-4 col-form-label text-md-right">名</label>
+                            <label for="first_name" class="col-md-4 col-form-label text-md-right">名</label>
 
                             <div class="col-md-6">
-                                <input id="first-name" type="text" placeholder="太郎" class="form-control @error('first-name') is-invalid @enderror" name="first-name" required autocomplete="first-name">
+                                <input id="first_name" type="text" placeholder="太郎" class="form-control @error('first_name') is-invalid @enderror" name="first_name" required autocomplete="first_name">
 
-                                @error('first-name')
+                                @error('first_name')
                                 <span class="invalid-feedback" role="alert">
                                     <strong>{{ $message }}</strong>
                                 </span>
@@ -39,12 +39,12 @@
                         </div>
                         
                         <div class="form-group row mb-2">
-                            <label for="last-name-reading" class="col-md-4 col-form-label text-md-right">せい</label>
+                            <label for="last_name_reading" class="col-md-4 col-form-label text-md-right">せい</label>
 
                             <div class="col-md-6">
-                                <input id="last-name-reading" type="text" placeholder="やまだ" class="form-control @error('first-name-reading') is-invalid @enderror" name="last-name-reading" required autocomplete="last-name-reading">
+                                <input id="last_name_reading" type="text" placeholder="やまだ" class="form-control @error('first_name_reading') is-invalid @enderror" name="last_name_reading" required autocomplete="last_name_reading">
 
-                                @error('last-name-reading')
+                                @error('last_name_reading')
                                 <span class="invalid-feedback" role="alert">
                                     <strong>{{ $message }}</strong>
                                 </span>
@@ -53,12 +53,12 @@
                         </div>
                         
                         <div class="form-group row mb-2">
-                            <label for="first-name-reading" class="col-md-4 col-form-label text-md-right">めい</label>
+                            <label for="first_name_reading" class="col-md-4 col-form-label text-md-right">めい</label>
 
                             <div class="col-md-6">
-                                <input id="first-name-reading" type="text" placeholder="たろう" class="form-control @error('first-name-reading') is-invalid @enderror" name="first-name-reading" required autocomplete="first-name-reading">
+                                <input id="first_name_reading" type="text" placeholder="たろう" class="form-control @error('first_name_reading') is-invalid @enderror" name="first_name_reading" required autocomplete="first_name_reading">
 
-                                @error('first-name-reading')
+                                @error('first_name_reading')
                                 <span class="invalid-feedback" role="alert">
                                     <strong>{{ $message }}</strong>
                                 </span>
@@ -81,9 +81,9 @@
                         </div>
                         
                         <div class="form-group row mb-2">
-                            <label for="postal-code" class="col-md-4 col-form-label text-md-right">郵便番号</label>
+                            <label for="postal_code" class="col-md-4 col-form-label text-md-right">郵便番号</label>
                             <div class="col-md-6">
-                                <input id="postal-code" type="text" placeholder="0000000(ハイフンなし7桁)"class="form-control" name="postal-code" value="{{ old('postal-code') }}" required autocomplete="postal-code">
+                                <input id="postal_code" type="text" placeholder="0000000(ハイフンなし7桁)"class="form-control" name="postal_code" value="{{ old('postal_code') }}" required autocomplete="postal_code">
                             </div>
                         </div>
 
@@ -102,30 +102,30 @@
                         </div>
 
                         <div class="form-group row mb-2">
-                            <label for="house-number" class="col-md-4 col-form-label text-md-right">番地</label>
+                            <label for="house_number" class="col-md-4 col-form-label text-md-right">番地</label>
                             <div class="col-md-6">
-                                <input id="house-number" type="text" placeholder="○丁目○番地○号"class="form-control" name="house-number" value="{{ old('house-number') }}" required autocomplete="house-number">
+                                <input id="house_number" type="text" placeholder="○丁目○番地○号"class="form-control" name="house_number" value="{{ old('house_number') }}" required autocomplete="house_number">
                             </div>
                         </div>
 
                         <div class="form-group row mb-2">
-                            <label for="building-name" class="col-md-4 col-form-label text-md-right">建物名・部屋番号</label>
+                            <label for="building_name" class="col-md-4 col-form-label text-md-right">建物名・部屋番号</label>
                             <div class="col-md-6">
-                                <input id="building-name" type="text" placeholder="○ハイツ○号室"class="form-control" name="building-name" value="{{ old('building-name') }}" required autocomplete="building-name">
+                                <input id="building_name" type="text" placeholder="○ハイツ○号室"class="form-control" name="building_name" value="{{ old('building_name') }}" required autocomplete="building_name">
                             </div>
                         </div>
 
                         <div class="form-group row mb-2">
-                            <label for="telephone-number" class="col-md-4 col-form-label text-md-right">電話番号</label>
+                            <label for="telephone_number" class="col-md-4 col-form-label text-md-right">電話番号</label>
                             <div class="col-md-6">
-                                <input id="telephone-number" type="text" placeholder="00000000000(ハイフンなし)"class="form-control " name="telephone-number" value="{{ old('telephone-number') }}" required autocomplete="telephone-number">
+                                <input id="telephone_number" type="text" placeholder="00000000000(ハイフンなし)"class="form-control " name="telephone_number" value="{{ old('telephone_number') }}" required autocomplete="telephone_number">
                             </div>
                         </div>
 
                         <div class="form-group row mb-2">
-                            <label for="emergency-telephone-number" class="col-md-4 col-form-label text-md-right">緊急連絡先</label>
+                            <label for="emergency_telephone_number" class="col-md-4 col-form-label text-md-right">緊急連絡先</label>
                             <div class="col-md-6">
-                                <input id="emergency-telephone-number" type="text" placeholder="00000000000(ハイフンなし)"class="form-control " name="emergency-telephone-number" value="{{ old('emergency-telephone-number') }}" required autocomplete="emergency-telephone-number">
+                                <input id="emergency_telephone_number" type="text" placeholder="00000000000(ハイフンなし)"class="form-control " name="emergency_telephone_number" value="{{ old('emergency_telephone_number') }}" required autocomplete="emergency_telephone_number">
                             </div>
                         </div>
 
@@ -144,26 +144,10 @@
                         </div>
 
                         <div class="form-group row mb-2">
-                            <label for="password-confirm" class="col-md-4 col-form-label text-md-right">パスワード(確認用)</label>
+                            <label for="password_confirm" class="col-md-4 col-form-label text-md-right">パスワード(確認用)</label>
 
                             <div class="col-md-6">
-                                <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required autocomplete="new-password">
-                            </div>
-                        </div>
-
-                        <div class="form-group row mb-2">
-                            <label for="password-confirm" class="col-md-4 col-form-label text-md-right">パスワード(確認用)</label>
-
-                            <div class="col-md-6">
-                                <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required autocomplete="new-password">
-                            </div>
-                        </div>
-
-                        <div class="form-group row mb-2">
-                            <label for="password-confirm" class="col-md-4 col-form-label text-md-right">パスワード(確認用)</label>
-
-                            <div class="col-md-6">
-                                <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required autocomplete="new-password">
+                                <input id="password_confirm" type="password" class="form-control" name="password_confirmation" required autocomplete="new-password">
                             </div>
                         </div>
                         

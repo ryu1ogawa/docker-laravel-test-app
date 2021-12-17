@@ -1,7 +1,9 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\Auth\RegisterController;
 use App\Http\Controllers\MemberController;
+use App\Http\Controllers\UserController;
 use App\Http\Controllers\Employee\ClassificationController;
 use App\Http\Controllers\Employee\ContractKindController;
 use App\Http\Controllers\Employee\CourseController;
@@ -26,8 +28,10 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('user/index', [UserController::class, 'index'])->name('user.index');
 
 Route::get('member/create', [MemberController::class, 'create'])->name('member.create');
+Route::get('member/index', [MemberController::class, 'index'])->name('member.index');
 Route::post('member/store', [MemberController::class, 'store'])->name('member.store');
 Route::post('member/{id}/edit', [MemberController::class, 'edit'])->name('member.edit');
 Route::post('member/{id}/update', [MemberController::class, 'update'])->name('member.update');

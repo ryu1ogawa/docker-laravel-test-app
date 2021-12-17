@@ -14,17 +14,28 @@ class Member extends Model
     }
 
     protected $fillable = [
-        'last-name',
-        'first-name',
+        'user_id',
+        'number',
+        'phot',
+        'start_date',
+        'last_name',
+        'first_name',
         'name',
-        'last-name-reading',
-        'first-name-reading',
-        'name-reading',
+        'last_name_reading',
+        'first_name_reading',
+        'name_reading',
         'birthday',
         'sex',
         'classification',
-        'education-facility',
-        'school-name',
-        'contract-kinds',
+        'education_facility',
+        'school_name',
+        'anamnesis',
+        'heart_disease',
+        'outpatient',
+        'experience',
+        'contract_kind',
+        'course',
+        'school_bus'
+        
     ];
 }

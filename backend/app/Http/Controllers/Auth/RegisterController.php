@@ -24,6 +24,8 @@ class RegisterController extends Controller
 
     use RegistersUsers;
 
+    
+
     /**
      * Where to redirect users after registration.
      *
@@ -50,14 +52,17 @@ class RegisterController extends Controller
     protected function validator(array $data)
     {
         return Validator::make($data, [
-            'last-name' => ['required', 'string', 'max:255'],
-            'first-name' => ['required', 'string', 'max:255'],
-            'last-name-reading' => ['required', 'string', 'max:255'],
-            'first-name-reading' => ['required', 'string', 'max:255'],
+            'last_name' => ['required', 'string', 'max:255'],
+            'first_name' => ['required', 'string', 'max:255'],
+            'last_name_reading' => ['required', 'string', 'max:255'],
+            'first_name_reading' => ['required', 'string', 'max:255'],
             'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
             'password' => ['required', 'string', 'min:8', 'confirmed'],
         ]);
     }
+
+
+    
 
     /**
      * Create a new user instance after a valid registration.
@@ -70,19 +75,19 @@ class RegisterController extends Controller
         
         
         return User::create([
-            'last-name' => $data['last-name'],
-            'first-name' => $data['first-name'],
-            'name' => $data['last-name'].' '.$data['first-name'],
-            'last-name-reading' => $data['last-name-reading'],
-            'first-name-reading' => $data['first-name-reading'],
-            'name-reading' => $data['last-name-reading'].' '.$data['first-name-reading'],
-            'postal-code' => $data['postal-code'],
+            'last_name' => $data['last_name'],
+            'first_name' => $data['first_name'],
+            'name' => $data['last_name'].' '.$data['first_name'],
+            'last_name_reading' => $data['last_name_reading'],
+            'first_name_reading' => $data['first_name_reading'],
+            'name_reading' => $data['last_name_reading'].' '.$data['first_name_reading'],
+            'postal_code' => $data['postal_code'],
             'prefectures' => $data['prefectures'],
             'municipalities' => $data['municipalities'],
-            'house-number' => $data['house-number'],
-            'building-name' => $data['building-name'],
-            'telephone-number' => $data['telephone-number'],
-            'emergency-telephone-number' => $data['emergency-telephone-number'],
+            'house_number' => $data['house_number'],
+            'building_name' => $data['building_name'],
+            'telephone_number' => $data['telephone_number'],
+            'emergency_telephone_number' => $data['emergency_telephone_number'],
             'email' => $data['email'],
             'password' => Hash::make($data['password']),
             'employee' => isset($data['employee']),

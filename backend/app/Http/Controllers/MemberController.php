@@ -37,7 +37,8 @@ class MemberController extends Controller
     {
         //
         $member = new Member;
-
+        
+        $member->user_id = Auth::id();
         $member->last_name = $request->input('last_name');
         $member->first_name = $request->input('first_name');
         $member->name = $request->input('last_name' .' '. 'first_name');
@@ -92,6 +93,9 @@ class MemberController extends Controller
         //
         $member = Member::find($id);
 
+        $member->number = $request->input('number');
+        $member->phot = $request->input('phot');
+        $member->start_date = $request->input('start_date');
         $member->last_name = $request->input('last_name');
         $member->first_name = $request->input('first_name');
         $member->name = $request->input('last_name' .' '. 'first_name');
@@ -103,7 +107,13 @@ class MemberController extends Controller
         $member->classification = $request->input('classification');
         $member->education_facility = $request->input('education_facility');
         $member->school_name = $request->input('school_name');
+        $member->anamnesis = $request->input('anamnesis');
+        $member->heart_disease = $request->input('heart_disease');
+        $member->outpatient = $request->input('outpatient');
+        $member->experience = $request->input('experience');
         $member->contract_kind = $request->input('contract_kind');
+        $member->course = $request->input('course');
+        $member->school_bus = $request->input('school_bus');
 
         $member->save();
         return view('logged_in.mypage');
