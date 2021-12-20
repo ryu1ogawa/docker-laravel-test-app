@@ -59,7 +59,7 @@
                             <label for="birthday" class="col-md-4 col-form-label text-md-right">生年月日</label>
 
                             <div class="col-md-6">
-                                <input id="birthday" type="birthday" placeholder="test@example.com"class="form-control @error('birthday') is-invalid @enderror" name="birthday" value="{{ old('birthday') }}" required autocomplete="birthday">
+                                <input id="birthday" type="birthday" placeholder="1999/09/09"class="form-control @error('birthday') is-invalid @enderror" name="birthday" value="{{ old('birthday') }}" required autocomplete="birthday">
                             </div>
                         </div>
                         
@@ -72,40 +72,35 @@
                         </div>
 
                         <div class="form-group row mb-2">
-                            <label for="classification" class="col-md-4 col-form-label text-md-right">対象学年区分</label>
-                            <div class="col-md-6 dropdown">
-                                <button class="btn btn-secondary dropdown-toggle" type="button" id="classification" data-bs-toggle="dropdown" aria-expanded="false">
-                                    選択してください
-                                </button>
-                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                    <li><a class="dropdown-item" href="#">小学1年生</a></li>
-                                </ul>
-                            </div>
-                        </div>
-
-                        <div class="form-group row mb-2">
-                            <label for="education_facility" class="col-md-4 col-form-label text-md-right">教育機関</label>
-                            <div class="col-md-6 dropdown">
-                                <button class="btn btn-secondary dropdown-toggle" type="button" id="education_facility" data-bs-toggle="dropdown" aria-expanded="false">
-                                    選択してください
-                                </button>
-                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                    <li><a class="dropdown-item" href="#">小学校</a></li>
-                                </ul>
-                            </div>
+                            <label class="input-group-text" for="classification">対象学年区分</label>
+                            <select class="form-select" id="classification">
+                                <option selected>選択してください</option>
+                                <option value="1">小学1年生</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
                         </div>
                         
                         <div class="form-group row mb-2">
-                            <label for="school_name" class="col-md-4 col-form-label text-md-right">学校名</label>
-                            <div class="col-md-6 dropdown">
-                                <button class="btn btn-secondary dropdown-toggle" type="button" id="school_name" data-bs-toggle="dropdown" aria-expanded="false">
-                                    選択してください
-                                </button>
-                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                    <li><a class="dropdown-item" href="#">穂高小学校</a></li>
-                                </ul>
-                            </div>
+                            <label class="input-group-text" for="education_facility">教育機関</label>
+                            <select class="form-select" id="education_facility">
+                                <option selected>選択してください</option>
+                                <option value="1">小学校</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
                         </div>
+                        
+                        <div class="form-group row mb-2">
+                            <label class="input-group-text" for="school_name">学校名</label>
+                            <select class="form-select" id="school_name">
+                                <option selected>選択してください</option>
+                                <option value="1">穂高小学校</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                        </div>
+                        
 
                         <div class="form-group row mb-2">
                             <label for="anamnesis" class="col-md-4 col-form-label text-md-right">既往症</label>
@@ -134,41 +129,35 @@
                         </div>
 
                         <div class="form-group row mb-2">
-                            <label for="experience" class="col-md-4 col-form-label text-md-right">水泳経験</label>
-                            <div class="col-md-6 dropdown">
-                                <button class="btn btn-secondary dropdown-toggle" type="button" id="experience" data-bs-toggle="dropdown" aria-expanded="false">
-                                    選択してください
-                                </button>
-                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                    <li><a class="dropdown-item" href="#">水が怖い</a></li>
-                                </ul>
-                            </div>
+                            <label class="input-group-text" for="experience">水泳経験</label>
+                            <select class="form-select" id="experience">
+                                <option selected>選択してください</option>
+                                <option value="1">水が怖い</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
                         </div>
                         
                         <div class="form-group row mb-2">
-                            <label for="contract_kind" class="col-md-4 col-form-label text-md-right">種別</label>
-                            <div class="col-md-6 dropdown">
-                                <button class="btn btn-secondary dropdown-toggle" type="button" id="contract_kind" data-bs-toggle="dropdown" aria-expanded="false">
-                                    選択してください
-                                </button>
-                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                    <li><a class="dropdown-item" href="#">育成週一回</a></li>
-                                </ul>
-                            </div>
+                            <label class="input-group-text" for="contract_kind">種別</label>
+                            <select class="form-select" id="contract_kind">
+                                <option selected>選択してください</option>
+                                <option value="1">育成週一回</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
                         </div>
                         
                         <div class="form-group row mb-2">
-                            <label for="course" class="col-md-4 col-form-label text-md-right">コースの選択</label>
-                            <div class="col-md-6 dropdown">
-                                <button class="btn btn-secondary dropdown-toggle" type="button" id="course" data-bs-toggle="dropdown" aria-expanded="false">
-                                    選択してください
-                                </button>
-                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                    <li><a class="dropdown-item" href="#">月曜 16:45</a></li>
-                                </ul>
-                            </div>
+                            <label class="input-group-text" for="course">コースの選択</label>
+                            <select class="form-select" id="course">
+                                <option selected>選択してください</option>
+                                <option value="1">月曜 16:45</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
                         </div>
-
+                        
                         <div class="form-group row mb-2">
                             <label for="school_bus" class="col-md-4 col-form-label text-md-right">スクールバス希望</label>
                             <div class="col-md-6">

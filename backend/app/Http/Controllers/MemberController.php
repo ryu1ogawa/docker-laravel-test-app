@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Member;
+use Illuminate\Support\Facades\Auth;
 
 class MemberController extends Controller
 {
@@ -37,20 +38,31 @@ class MemberController extends Controller
     {
         //
         $member = new Member;
+
+        dd($request);
         
         $member->user_id = Auth::id();
+        $member->number = $request->input('number');
+        $member->phot = $request->input('phot');
+        $member->start_date = $request->input('start_date');
         $member->last_name = $request->input('last_name');
         $member->first_name = $request->input('first_name');
-        $member->name = $request->input('last_name' .' '. 'first_name');
+        $member->name = $request->input('last_name') .' '. $request->input('first_name');
         $member->last_name_reading = $request->input('last_name_reading');
         $member->first_name_reading = $request->input('first_name_reading');
-        $member->name_reading = $request->input('last_name_reading' .' '. 'first_name_reading');
+        $member->name_reading = $request->input('last_name_reading') .' '. $request->input('first_name_reading');
         $member->birthday = $request->input('birthday');
         $member->sex = $request->input('sex');
         $member->classification = $request->input('classification');
         $member->education_facility = $request->input('education_facility');
         $member->school_name = $request->input('school_name');
+        $member->anamnesis = $request->input('anamnesis');
+        $member->heart_disease = $request->input('heart_disease');
+        $member->outpatient = $request->input('outpatient');
+        $member->experience = $request->input('experience');
         $member->contract_kind = $request->input('contract_kind');
+        $member->course = $request->input('course');
+        $member->school_bus = $request->input('school_bus');
 
         $member->save();
         return view('logged_in.mypage');
