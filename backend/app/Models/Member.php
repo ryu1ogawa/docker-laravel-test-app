@@ -30,12 +30,16 @@ class Member extends Model
         'education_facility',
         'school_name',
         'anamnesis',
+        'anamnesis_disease_name',
+        'anamnesis_characteristic',
         'heart_disease',
         'outpatient',
         'experience',
         'contract_kind',
         'course',
         'school_bus'
+        'status'
+
         
     ];
 }

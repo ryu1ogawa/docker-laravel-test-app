@@ -31,12 +31,15 @@ class CreateMembersTable extends Migration
             $table->string('education_facility');
             $table->string('school_name');
             $table->string('anamnesis');
+            $table->string('anamnesis_disease_name');
+            $table->string('anamnesis_characteristic');
             $table->string('heart_disease');
             $table->string('outpatient');
             $table->string('experience');
             $table->string('contract_kind');
             $table->string('course');
             $table->string('school_bus');
+            $table->boolean('status');
             $table->rememberToken();
             $table->timestamps();
         });

@@ -38,8 +38,6 @@ class MemberController extends Controller
     {
         //
         $member = new Member;
-
-        dd($request);
         
         $member->user_id = Auth::id();
         $member->number = $request->input('number');
@@ -57,12 +55,15 @@ class MemberController extends Controller
         $member->education_facility = $request->input('education_facility');
         $member->school_name = $request->input('school_name');
         $member->anamnesis = $request->input('anamnesis');
+        $member->anamnesis = $request->input('anamnesis_disease_name');
+        $member->anamnesis = $request->input('anamnesis_characteristic');
         $member->heart_disease = $request->input('heart_disease');
         $member->outpatient = $request->input('outpatient');
         $member->experience = $request->input('experience');
         $member->contract_kind = $request->input('contract_kind');
         $member->course = $request->input('course');
         $member->school_bus = $request->input('school_bus');
+        $member->status = 1;
 
         $member->save();
         return view('logged_in.mypage');
